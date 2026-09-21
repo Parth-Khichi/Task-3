@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+
+    <style>
+        .register-form {
+            border: 2px solid black;
+            width: 350px;
+            padding: 20px;
+            margin: 50px auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 8px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="register-form">
+
+    <h1>Register Form</h1>
+
+    <form action="/register" method="POST">
+
+        <!-- Username -->
+        <label>Username:</label>
+        <input type="text" name="username" required>
+        <br><br>
+
+        <!-- Email -->
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+
+        <input type="radio" name="gender" value="Male" required>
+        Male
+
+        <input type="radio" name="gender" value="Female">
+        Female
+
+        <br><br>
+
+        <!-- Password -->
+        <label>Password:</label>
+        <input type="password"
+               name="password"
+               required
+               minlength="6">
+        <br><br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
